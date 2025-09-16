@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: portfolio:local
+    ports:
+      - "2121:80"
+    restart: unless-stopped
+
